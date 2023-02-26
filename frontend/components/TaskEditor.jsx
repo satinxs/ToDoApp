@@ -16,7 +16,7 @@ export default TaskEditor = () => {
     const inputRef = useRef(null);
 
     const doSaveTask = () => {
-        if (currentTask.value.title.length > 0) //Validate if there's any title to the task before saving it.
+        if (currentTask.value.title.trim().length > 0) //Validate if there's any title to the task before saving it.
             actions.saveCurrentTask();
 
         if (inputRef.current) //If the reference was assigned to the input, after the button press reassign focus to it.
