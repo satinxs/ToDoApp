@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'icomoon-pack';
+    src: url('icomoon-pack.ttf?6p5th6') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon-pack' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pencil:before {
+    content: "\e905";
+}
+
+.icon-pushpin:before {
+    content: "\e946";
+}
+
+.icon-search:before {
+    content: "\e986";
+}
+
+.icon-bin:before {
+    content: "\e9ac";
+}
+
+.icon-plus:before {
+    content: "\ea0a";
+}
+
+.icon-minus:before {
+    content: "\ea0b";
+}
+
+.icon-cross:before {
+    content: "\ea0f";
+}
+
+.icon-checkmark:before {
+    content: "\ea10";
+}

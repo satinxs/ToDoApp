@@ -1,0 +1,77 @@
+@import url(simple.css);
+@import url(icons.css);
+
+label {
+    user-select: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.edit {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+}
+
+label[for=task-content] {
+    margin: 0.5rem;
+    line-height: 2;
+}
+
+input[id=task-content] {
+    margin: 0.5rem;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted darkslategray;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: darkslategray;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+
+    width: 120px;
+    bottom: 120%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: darkslategray transparent transparent transparent;
+}
+
+button {
+    margin: 0.1rem;
+}
+
+.checkbox {
+    display: inline-block;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
